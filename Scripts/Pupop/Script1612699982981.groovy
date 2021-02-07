@@ -14,31 +14,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login test'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/UserForm/Initial'), 'Yoho&*%^$')
+WebUI.click(findTestObject('popup/popup'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Object Repository/UserForm/First Name'), 'batu')
+WebUI.switchToWindowIndex(1)
+
+WebUI.selectOptionByValue(findTestObject('popup/title'), '2', true)
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Object Repository/UserForm/Middle Name'), 'pala')
+WebUI.setText(findTestObject('popup/initial'), 'saman')
 
-WebUI.click(findTestObject('Object Repository/UserForm/gender'))
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/popup/popup'))
 
-WebUI.delay(3)
-
-WebUI.selectOptionByValue(findTestObject('Page_Popup Window/select_SelectMr.Ms'), '1', true)
-
-WebUI.delay(2)
-
-WebUI.selectOptionByValue(findTestObject('Page_Popup Window/select_SelectMr.Ms'), '2', true)
-
-WebUI.closeBrowser()
 

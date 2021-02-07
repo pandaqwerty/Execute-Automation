@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>gender</name>
+   <name>initial</name>
    <tag></tag>
-   <elementGuidId>b7b6072b-c8a2-4437-848e-62183c4f44c0</elementGuidId>
+   <elementGuidId>12b743cf-ba6a-40c4-b053-5071277a2112</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@checked = 'checked' and @name = 'Male' and @type = 'radio']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@name = 'Male' and @type = 'radio']</value>
+         <value>//*[@id = 'Initial' and @name = 'Initial' and @type = 'text']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>checked</name>
+      <name>id</name>
       <type>Main</type>
-      <value>checked</value>
+      <value>Initial</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Male</value>
+      <value>Initial</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>radio</value>
+      <value>text</value>
    </webElementProperties>
 </WebElementEntity>
